@@ -2,11 +2,11 @@ const config = require("./config");
 
 const Rules = {
   format(urls) {
-    // 1. exclude hash
-    // 2. exclude not base
+    // 1. exclude not base
+    // 2. exclude hash
     return urls
-      .filter((url) => !url.includes("#"))
-      .filter((url) => url.includes(config.base));
+      .filter((url) => url.includes(config.base))
+      .filter((url) => !url.includes("#"));
   },
 };
 
