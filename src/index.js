@@ -12,5 +12,3 @@ const config = require("./config");
   // console.log(newLinks);
 })();
 
-// 1. filter url that we dont want
-// 2. Log
