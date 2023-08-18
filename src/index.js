@@ -9,6 +9,6 @@ const config = require("./config");
   const { links, imgs } = data;
   const newLinks = Rules.format(links);
 
-  // console.log(newLinks);
+  console.log(newLinks);
 })();
 
