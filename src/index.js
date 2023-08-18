@@ -1,6 +1,7 @@
 const WebService = require("./pptr");
 const Rules = require("./rules");
 const Log = require("./log");
+const XMLService = require("./xml");
 const config = require("./config");
 
 (async () => {
@@ -8,7 +9,5 @@ const config = require("./config");
   Log.log("Data received");
   const { links, imgs } = data;
   const newLinks = Rules.format(links);
-
-  console.log(newLinks);
+  XMLService.createXML(newLinks);
 })();
-
